@@ -3,42 +3,35 @@ import run from "aocrunner";
 const parseInput = (rawInput) => rawInput.trim().split(",").map(Number);
 
 const part1 = (rawInput) => {
-  const fishes = parseInput(rawInput);
+  const reducer = (previousValue, currentValue) => previousValue + currentValue;
+  let input = parseInput(rawInput);
   const dayLimit = 80;
+  const fishesByGeneration = new Array(9).fill(0);
+  input.map((fish) => {
+    fishesByGeneration[fish] += 1;
+  });
   for (let day = 1; day <= dayLimit; day++) {
-    const newborn = [];
-    fishes.forEach((fish, index) => {
-      if (fish === 0) {
-        fishes[index] = 6;
-        newborn.push(8);
-      } else {
-        fishes[index] = fish -= 1;
-      }
-    });
-    fishes.push(...newborn);
+    const timerZero = fishesByGeneration.shift();
+    fishesByGeneration[6] += timerZero;
+    fishesByGeneration.push(timerZero);
   }
-  return fishes.length;
+  return fishesByGeneration.reduce(reducer);
 };
 
 const part2 = (rawInput) => {
-  let fishes = parseInput(rawInput);
+  const reducer = (previousValue, currentValue) => previousValue + currentValue;
+  let input = parseInput(rawInput);
   const dayLimit = 256;
+  const fishesByGeneration = new Array(9).fill(0);
+  input.map((fish) => {
+    fishesByGeneration[fish] += 1;
+  });
   for (let day = 1; day <= dayLimit; day++) {
-    console.log(day);
-    const newborn = [];
-    fishes.forEach((fish, index) => {
-      if (fish === 0) {
-        fishes[index] = 6;
-        newborn.push(8);
-      } else {
-        fishes[index] = fish -= 1;
-      }
-    });
-    fishes = [...fishes, ...newborn];
-    console.log(fishes.length);
+    const timerZero = fishesByGeneration.shift();
+    fishesByGeneration[6] += timerZero;
+    fishesByGeneration.push(timerZero);
   }
-
-  return fishes.length;
+  return fishesByGeneration.reduce(reducer);
 };
 
 run({
@@ -61,5 +54,5 @@ run({
     solution: part2,
   },
   trimTestInputs: true,
-  onlyTests: true,
+  onlyTests: false,
 });
