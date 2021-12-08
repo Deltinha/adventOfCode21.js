@@ -17,7 +17,7 @@
 [![Day](https://badgen.net/badge/04/%E2%98%85%E2%98%85/green)](src/day04)
 [![Day](https://badgen.net/badge/05/%E2%98%85%E2%98%85/green)](src/day05)
 [![Day](https://badgen.net/badge/06/%E2%98%85%E2%98%85/green)](src/day06)
-![Day](https://badgen.net/badge/07/%E2%98%86%E2%98%86/gray)
+[![Day](https://badgen.net/badge/07/%E2%98%85%E2%98%85/green)](src/day07)
 ![Day](https://badgen.net/badge/08/%E2%98%86%E2%98%86/gray)
 ![Day](https://badgen.net/badge/09/%E2%98%86%E2%98%86/gray)
 ![Day](https://badgen.net/badge/10/%E2%98%86%E2%98%86/gray)
@@ -39,6 +39,8 @@
 
 <!--/SOLUTIONS-->
 
+_Click a badge to go to the specific day._
+
 ---
 
 ## Installation
@@ -58,6 +60,194 @@ Example:
 ```
 npm start 1
 ```
+
+---
+
+## Results
+
+<!--RESULTS-->
+
+```
+Day 01
+Time part 1: 0.65ms
+Time part 2: 0.53ms
+Both parts: 1.1800000000000002ms
+```
+
+```
+Day 02
+Time part 1: 1.22ms
+Time part 2: 0.94ms
+Both parts: 2.16ms
+```
+
+```
+Day 03
+Time part 1: 0.88ms
+Time part 2: 1.45ms
+Both parts: 2.33ms
+```
+
+```
+Day 04
+Time part 1: 7.34ms
+Time part 2: 465.48ms
+Both parts: 472.82ms
+```
+
+```
+Day 05
+Time part 1: 33.65ms
+Time part 2: 69.81ms
+Both parts: 103.46000000000001ms
+```
+
+```
+Day 06
+Time part 1: 0.131ms
+Time part 2: 0.068ms
+Both parts: 0.19882100000000003ms
+```
+
+```
+Day 07
+Time part 1: 0.305ms
+Time part 2: 0.731ms
+Both parts: 1.036236ms
+```
+
+```
+Day 08
+Time part 1: -
+Time part 2: -
+Both parts: -
+```
+
+```
+Day 09
+Time part 1: -
+Time part 2: -
+Both parts: -
+```
+
+```
+Day 10
+Time part 1: -
+Time part 2: -
+Both parts: -
+```
+
+```
+Day 11
+Time part 1: -
+Time part 2: -
+Both parts: -
+```
+
+```
+Day 12
+Time part 1: -
+Time part 2: -
+Both parts: -
+```
+
+```
+Day 13
+Time part 1: -
+Time part 2: -
+Both parts: -
+```
+
+```
+Day 14
+Time part 1: -
+Time part 2: -
+Both parts: -
+```
+
+```
+Day 15
+Time part 1: -
+Time part 2: -
+Both parts: -
+```
+
+```
+Day 16
+Time part 1: -
+Time part 2: -
+Both parts: -
+```
+
+```
+Day 17
+Time part 1: -
+Time part 2: -
+Both parts: -
+```
+
+```
+Day 18
+Time part 1: -
+Time part 2: -
+Both parts: -
+```
+
+```
+Day 19
+Time part 1: -
+Time part 2: -
+Both parts: -
+```
+
+```
+Day 20
+Time part 1: -
+Time part 2: -
+Both parts: -
+```
+
+```
+Day 21
+Time part 1: -
+Time part 2: -
+Both parts: -
+```
+
+```
+Day 22
+Time part 1: -
+Time part 2: -
+Both parts: -
+```
+
+```
+Day 23
+Time part 1: -
+Time part 2: -
+Both parts: -
+```
+
+```
+Day 24
+Time part 1: -
+Time part 2: -
+Both parts: -
+```
+
+```
+Day 25
+Time part 1: -
+Time part 2: -
+Both parts: -
+```
+
+```
+Total stars: 14/50
+Total time: 583.185ms
+```
+
+<!--/RESULTS-->
 
 ---
 
