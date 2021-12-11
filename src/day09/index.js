@@ -99,13 +99,13 @@ const part2 = (rawInput) => {
       1 +
       calculateBasinSize({ y: y + 1, x }) +
       calculateBasinSize({ y: y - 1, x }) +
-      calculateBasinSize({ y, x: x + 1 }) +
-      calculateBasinSize({ y, x: x - 1 })
+      calculateBasinSize({ y, x: x - 1 }) +
+      calculateBasinSize({ y, x: x + 1 })
     );
   }
 
-  const basinSizes = lowLevels.map((lL) =>
-    calculateBasinSize({ y: lL[0], x: lL[1] }),
+  const basinSizes = lowLevels.map((coord) =>
+    calculateBasinSize({ y: coord[0], x: coord[1] }),
   );
 
   return basinSizes
