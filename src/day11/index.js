@@ -79,7 +79,9 @@ const part2 = (rawInput) => {
       calculateFlashes({ y: y - 1, x: x + 1 });
     }
   }
-  for (let step = 1; step <= maxStep; step++) {
+  let step = 0;
+  while (true) {
+    step += 1;
     let zeroesCount = 0;
     for (let y = 0; y < grid.length; y++) {
       for (let x = 0; x < grid.length; x++) {
